@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Occurances</title>
+</head>
+<body>
+    
+    <script>
+        function wordoccurance(str){
+            let word = str.split(" ");
+            let map = new Map();
+            for( let val of word)
+            {
+                if(map.has(val)){
+                    map.set(val,map.get(val)+1)
+                }
+                else{
+                    map.set(val,1)
+                }
+            }
+            return map;
+        }
+    let string = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eius rem quidem laudantium laborum dignissimos harum odit veritatis aperiam vel! Corrupti eos ducimus dolor delectus cum quidem quo cupiditate recusandae?";
+    console.log(wordoccurance(string));
+    </script>
+</body>
+</html>

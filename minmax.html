@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Max Value</title>
+</head>
+<body>
+    <script>
+        function valuefinder(arr){
+            return{
+                max: Math.max(...arr),
+                min: Math.min(...arr)
+            };
+            
+        }
+        let arr = [5,4,7,8,1,6,2,9,51]
+        console.log(valuefinder(arr));
+        // valuefinder(arr)
+    </script>
+</body>
+</html>

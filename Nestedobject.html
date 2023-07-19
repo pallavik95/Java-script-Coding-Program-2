@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestetd Object</title>
+</head>
+<body>
+
+    <script>
+        function nestedobject(obj) {           
+            const{name} =obj;            
+            const {street} = obj.address
+            return {
+                name,
+                street
+            }
+        }
+        const person = {
+            name :'Jay',
+            age : 28,
+            address : {
+                street : "B-block,Hinjewadi.",
+                city : "Pune",
+                state : "Maharastra"
+            },
+        };
+        console.log(nestedobject(person));
+    </script>
+</body>
+</html>
